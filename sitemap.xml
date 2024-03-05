@@ -4,7 +4,7 @@
   <url>
     <loc>http://www.amaoc.cn/2023/11/28/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
     
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -157,7 +157,7 @@
 
   <url>
     <loc>http://www.amaoc.cn/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -165,28 +165,28 @@
   
   <url>
     <loc>http://www.amaoc.cn/tags/js/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.amaoc.cn/tags/css/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.amaoc.cn/tags/stylelint/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.amaoc.cn/tags/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -195,7 +195,7 @@
   
   <url>
     <loc>http://www.amaoc.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2024-03-04</lastmod>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
