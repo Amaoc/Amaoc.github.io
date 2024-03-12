@@ -6,7 +6,7 @@
   <link href="http://www.amaoc.cn/atom.xml" rel="self"/>
   
   <link href="http://www.amaoc.cn/"/>
-  <updated>2024-03-05T02:59:25.369Z</updated>
+  <updated>2024-03-12T02:29:49.779Z</updated>
   <id>http://www.amaoc.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>new 具体做了什么事？</title>
+    <link href="http://www.amaoc.cn/2024/03/12/new%20%E5%85%B7%E4%BD%93%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%E4%BA%8B%EF%BC%9F/"/>
+    <id>http://www.amaoc.cn/2024/03/12/new%20%E5%85%B7%E4%BD%93%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%E4%BA%8B%EF%BC%9F/</id>
+    <published>2024-03-12T02:05:25.148Z</published>
+    <updated>2024-03-12T02:29:49.779Z</updated>
+    
+    <content type="html"><![CDATA[<p>通俗来说，我们都知道new一般做了下面四件事：</p><blockquote><p>1、创建一个空对象；</p><p>2、将空对象的原型，指向于构造函数的原型；</p><p>3、将空对象作为构造函数的上下文（改变this指向）；</p><p>4、对有返回值的构造函数做判断处理</p></blockquote><p>代码实现：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Fun</span>(<span class="params">age, name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">myNew</span>(<span class="params">fn, ...args</span>) &#123;</span><br><span class="line">    <span class="comment">//1、先创造空对象</span></span><br><span class="line">    <span class="comment">//其实等于var obj = Object.create(&#123;&#125;)  </span></span><br><span class="line">    <span class="keyword">var</span> obj = &#123;&#125;</span><br><span class="line">    <span class="comment">//2、obj的__proto__指向原型</span></span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">setPrototypeOf</span>(obj, fn.<span class="property"><span class="keyword">prototype</span></span>)</span><br><span class="line">    <span class="comment">//3、改变this指向，执行构造函数内部函数</span></span><br><span class="line">    <span class="keyword">var</span> result = fn.<span class="title function_">apply</span>(obj, args)</span><br><span class="line">    <span class="comment">//4、判断return</span></span><br><span class="line">    <span class="keyword">return</span> result <span class="keyword">instanceof</span> <span class="title class_">Object</span> ? result : obj</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;通俗来说，我们都知道new一般做了下面四件事：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1、创建一个空对象；&lt;/p&gt;
+&lt;p&gt;2、将空对象的原型，指向于构造函数的原型；&lt;/p&gt;
+&lt;p&gt;3、将空对象作为构造函数的上下文（改变this指向）；&lt;/p&gt;
+&lt;p&gt;4、对有返回值的构造函</summary>
+      
+    
+    
+    
+    <category term="前端开发" scheme="http://www.amaoc.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="js" scheme="http://www.amaoc.cn/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>浏览器浅谈</title>
